@@ -69,6 +69,7 @@ def crear_movimiento(movimiento: Movimiento):
         return False
     else:
         database_movs[movimiento.id] = movimiento
+<<<<<<< HEAD
         return True
 
 #Creado Julián
@@ -78,3 +79,6 @@ def actualizar_movimiento(movimiento: Movimiento):
         return True
     else:
         return False
+=======
+        return True
+>>>>>>> c4d42a415733acbbb72062c33c26c165da0142f7
