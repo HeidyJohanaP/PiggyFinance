@@ -41,15 +41,4 @@ async def crear_movimiento(movimiento: db.movimientos_db.Movimiento):
         return {"message" : "Movimiento creado exitosamente."}
     else:
         raise HTTPException(status_code=400, detail="Ya existe un movimiento con el ID especificado.")
-<<<<<<< HEAD
 
-#Tarea Julián
-@app.put("/mov/actualizar")
-async def actualizar_movimiento(movimiento: db.movimientos_db.Movimiento):
-    orden_actualizada = db.movimientos_db.actualizar_movimiento(movimiento)
-    if orden_actualizada: 
-        return {"message" : "Movimiento actualizado exitosamente."}
-    else:
-        raise HTTPException(status_code=400, detail="No existe un movimiento con el ID especificado.")
-=======
->>>>>>> c4d42a415733acbbb72062c33c26c165da0142f7
