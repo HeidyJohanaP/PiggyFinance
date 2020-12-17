@@ -70,3 +70,11 @@ def crear_movimiento(movimiento: Movimiento):
     else:
         database_movs[movimiento.id] = movimiento
         return True
+
+def generar_id():
+    nuevo_id = 1
+    for m in database_movs:
+        if nuevo_id <= m:
+            nuevo_id = m
+    nuevo_id += 1
+    return nuevo_id
